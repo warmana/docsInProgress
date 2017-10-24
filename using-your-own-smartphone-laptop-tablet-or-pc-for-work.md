@@ -52,7 +52,7 @@ If your device is lost, stolen or 'hacked', you must:
 
 - tell your line manager straight away
 - fill in a [security incident form](https://intranet.justice.gov.uk/guidance/security/report-a-security-incident/)
-- email the form to: [mailto:itservicedesk@justice.gsi.gov.uk](mailto:itservicedesk@justice.gsi.gov.uk)
+- email the form to: [itservicedesk@justice.gsi.gov.uk](mailto:itservicedesk@justice.gsi.gov.uk)
 
 Find out more about [how to report a security incident](https://intranet.justice.gov.uk/guidance/security/report-a-security-incident/).
 
@@ -79,4 +79,4 @@ If you are not sure whether the information is sensitive, assume that it is sens
 
 You might be allowed to use other services for working on your own device.
 
-To find out if you can, email [mailto:itservicedesk@justice.gsi.gov.uk](mailto:itservicedesk@justice.gsi.gov.uk) with the subject "`Access to a new service on my own device`" and details of the service you'd like to use.
+To find out if you can, email [itservicedesk@justice.gsi.gov.uk](mailto:itservicedesk@justice.gsi.gov.uk) with the subject "`Access to a new service on my own device`" and details of the service you'd like to use.
