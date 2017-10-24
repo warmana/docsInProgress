@@ -1,6 +1,9 @@
-<p>Good incident management enables the MOJ to respond to security incidents in a calm, efficient and effective manner. This incident management policy describes what must be done when an incident occurs.</p>
-<p>The Incident Management Standard [link to follow] provides help with creating an incident management plan that complies with the policy. For example, the standard describes the roles and responsibilities of people working to address the incident.</p>
-<p>The policy statements are as follows:
+Good incident management enables the MOJ to respond to security incidents in a calm, efficient and effective manner. This incident management policy describes what must be done when an incident occurs.
+
+The Incident Management Standard [link to follow] provides help with creating an incident management plan that complies with the policy. For example, the standard describes the roles and responsibilities of people working to address the incident.
+
+The policy statements are as follows:
+
 <table>
   <tr>
     <td>Each MoJ Business Group must have an IT Security Incident Management Plan which aligns to this policy. This plan must be common to all IT systems within a particular business group.</td>
@@ -99,8 +102,8 @@ management report must be prepared covering:
   <li>Any recommendations made.</li>
 </ul></td>
   </tr>
-</table></p>
-<br/>
+</table>
+
 <table border='1'>
 <tr>
 <td>This policy is dated October 2017, and is an update of the IT Incident Management Policy, v1.0, May 2013.</td>
