@@ -154,8 +154,8 @@ Table 1 below provides a high level overview of the security testing which shoul
 
 | Testing activity | Description | Security Testing Consideration |
 | --- | --- | --- |
-| Unit\/Module\/Package Testing | This is aimed at verifying that individual modules\/packages comply with their design. | See [Secure code review](#secure-code-review) |
-| Component Testing | Units\/Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See [Secure code review](#secure-code-review). Functional testing and enhanced secure code review of security enforcing components |
+| Unit/Module/Package Testing | This is aimed at verifying that individual modules/packages comply with their design. | See [Secure code review](#secure-code-review) |
+| Component Testing | Units/Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See [Secure code review](#secure-code-review). Functional testing and enhanced secure code review of security enforcing components |
 | Integration Testing | Involves combing system components together into a complete system release then testing as a whole. | Functional testing of security enforcing components. Functional testing of the integration of components with security enforcing functions. |
 | Acceptance Testing (FAT and SAT) | The set of tests to be run to demonstrate the suitability of the system to the client. These will typically be a subset of the tests used for system testing in the integration phase. | Testing of both functional and non-functional security requirements. Penetration test or ITHC (see [System Configuration Tests](#system-configuration-tests) ). Vulnerability scan (see [Vulnerability Scanning](#vulnerability-scanning) ). Compliance scan (see [Compliance Scanning](#compliance-scanning) ). |
 
