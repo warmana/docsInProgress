@@ -1,4 +1,5 @@
 [accreditation-framework]: https://intranet.justice.gov.uk/documents/2015/04/accreditation-framework.pdf
+[GPG30]: https://www.ncsc.gov.uk/guidance/assurance-ict-systems-and-services-gpg-30
 
 The purpose of system testing is to ensure all the functional and non-functional requirements of the system are verified to be operating within specified bounds.
 [HMG Security Policy Framework](https://www.gov.uk/government/publications/security-policy-framework/hmg-security-policy-framework) mandatory requirements 9 states that:
@@ -87,7 +88,7 @@ When a security test has been conducted, it is likely to highlight several risks
 
 ### Types of security tests
 
-The CESG assurance model covered in [CESG Good Practice Guide (GPG) No. 30](https://www.ncsc.gov.uk/guidance/assurance-ict-systems-and-services-gpg-30) outlines the various types of security testing which should be considered. This section provides an overview of the three most common types:
+The CESG assurance model covered in [CESG Good Practice Guide (GPG) No. 30][GPG30] outlines the various types of security testing which should be considered. This section provides an overview of the three most common types:
 
 * System Configuration Tests;
 * Vulnerability Scanning;
@@ -112,7 +113,7 @@ Internal tests may be performed more regularly to provide informal assurance tha
 
 ##### IT Health Check (ITHC)
 
-An ITHC is the penetration test conducted as part of the CESG specified and managed CHECK scheme. It is intended to provide external assurance to an Accreditor that an ICT system's setup and configuration meets the desired HMG assurance level (as determined by the system Accreditor in conjunction with [CESG GPG No. 30](https://www.ncsc.gov.uk/guidance/assurance-ict-systems-and-services-gpg-30).
+An ITHC is the penetration test conducted as part of the CESG specified and managed CHECK scheme. It is intended to provide external assurance to an Accreditor that an ICT system's setup and configuration meets the desired HMG assurance level (as determined by the system Accreditor in conjunction with [CESG GPG No. 30][GPG30].
 
 **Note:** Most MoJ ICT systems are connected to the GSi.  The GSi Codes of Connection (CoCo) mandates that an ITHC is conducted every 12 months.
 
@@ -153,8 +154,8 @@ Table below provides a high level overview of the security testing which should 
 
 | Testing activity | Description | Security Testing Consideration |
 | --- | --- | --- |
-| Unit-Module-Package Testing | This is aimed at verifying that individual modules-packages comply with their design. | See [Secure code review](#secure-code-review) |
-| Compound Testing | Units-Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See [Secure code review](#secure-code-review). Functional testing and enhanced secure code review of security enforcing components |
+| Unit\/Module\/Package Testing | This is aimed at verifying that individual modules\/packages comply with their design. | See [Secure code review](#secure-code-review) |
+| Compound Testing | Units\/Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See [Secure code review](#secure-code-review). Functional testing and enhanced secure code review of security enforcing components |
 | Integration Testing | Involves combing system components together into a complete system release then testing as a whole. | Functional testing of security enforcing components. Functional testing of the integration of components with security enforcing functions. |
 | Acceptance Testing (FAT and SAT) | The set of tests to be run to demonstrate the suitability of the system to the client. These will typically be a subset of the tests used for system testing in the integration phase. | Testing of both functional and non-functional security requirements. Penetration test or ITHC (see [System Configuration Tests](#system-configuration-tests) ). Vulnerability scan (see [Vulnerability Scanning](#vulnerability-scanning) ). Compliance scan (see [Compliance Scanning](#compliance-scanning) ). |
 
