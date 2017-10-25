@@ -5,11 +5,11 @@ The purpose of system testing is to ensure all the functional and non-functional
 
 Policy statements on system testing are covered in [IT Security – Technical Controls Policy](https://intranet.justice.gov.uk/documents/2015/04/technical-controls-policy.pdf) where this document sets out the MoJ standard for its implementation.
 
-## Scope
+### Scope
 
 This standard is concerned with the security testing of all MoJ ICT systems including ICT systems hosted by third party suppliers on behalf of the MoJ.
 
-## Definitions
+### Definitions
 
 For the purposes of this standard the following definitions apply:
 
@@ -17,11 +17,11 @@ For the purposes of this standard the following definitions apply:
 
 **Security testing** – The subset of system tests which concentrate on testing an application's and/or ICT system's functional and non-functional security requirements.
 
-## Demonstration of Compliance
+### Demonstration of Compliance
 
 The [CESG Information Assurance Maturity Model (IAMM)](https://www.ncsc.gov.uk/guidance/information-assurance-maturity-model-and-assessment-framework-gpg-40) sets out the minimum maturity level Government departments should attain. System testing is captured as a basic requirement in Level 1, which the MoJ will need to demonstrate compliance with in the MoJ IAMM return to Cabinet Office.
 
-# Testing approach
+## Testing approach
 
 This standard outlines at a high level the security testing which must be applied to all MoJ ICT systems to ensure that security vulnerabilities are identified and risk managed appropriately. The aim is for this standard to feed into the overall test requirements and test plan for an ICT system.
 
@@ -45,7 +45,7 @@ The rest of this document is split into four sections:
 *   Types of security testing – Provides an overview of the common types of security testing.
 *   Pre-live security testing – Outlines how security testing links in with the standard set of testing activities which are conducted during the development and deployment phases of an ICT system.
 
-## Guidelines
+### Guidelines
 
 HMG IAS 1 & 2 requires that assurance evidence is provided covering an ICT system's business systems design, implementation, and operation.
 
@@ -54,7 +54,7 @@ Security testing of an ICT system and the assurance evidence required by an Accr
 * Commercial off the Shelf (COTS) product assurance – Test assurance obtained through the use of a security evaluated (either by CESG or via the Common Criteria scheme) COTS product. This assurance can be obtained during the system design phase.
 * System configuration tests - Test assurance obtained before deployment and maintained thereafter in line with the system re-accreditation process. Further details on the Accreditation process can be found in the [Accreditation Framework](https://intranet.justice.gov.uk/documents/2015/04/accreditation-framework.pdf).
 
-### System test data
+#### System test data
 
 Data used for system testing usually involves test data which have similar characteristics as close as possible to operational data.
 
@@ -73,7 +73,7 @@ In exceptional circumstances, the use of live system data may be permitted. Perm
 [Policy on the use of live personal data for the
 testing of IT systems, processes or procedures](https://intranet.justice.gov.uk/documents/2015/04/live-personal-data-testing-systems.pdf)
 
-## Risk assessment and management
+### Risk assessment and management
 
 As expressed at the start of this section, the rigour of any security tests must be commensurate with the impact of a security failure. This means that a risk based approach must be taken when considering what types of security tests to execute.
 
@@ -83,7 +83,7 @@ When a security test has been conducted, it is likely to highlight several risks
 
 <a id="Types of security tests"></a>
 
-## Types of security tests
+### Types of security tests
 
 The CESG assurance model covered in [CESG Good Practice Guide (GPG) No. 30](https://www.ncsc.gov.uk/guidance/assurance-ict-systems-and-services-gpg-30) outlines the various types of security testing which should be considered. This section provides an overview of the three most common types:
 
@@ -93,7 +93,7 @@ The CESG assurance model covered in [CESG Good Practice Guide (GPG) No. 30](http
 
 <a id="System Configuration Tests"></a>
 
-### System Configuration Tests
+#### System Configuration Tests
 
 System configuration tests are first conducted prior to deployment and repeated periodically thereafter with the objective being to ensure that the system or system component does not contain any unacceptable vulnerabilities.
 
@@ -106,7 +106,7 @@ There any many different types of penetration test, for most MoJ ICT systems; th
 
 Internal tests may be performed more regularly to provide informal assurance that on-going changes have not introduced any new vulnerabilities to an ICT system and that existing security controls are operating correctly.
 
-#### IT Health Check (ITHC)
+##### IT Health Check (ITHC)
 
 An ITHC is the penetration test conducted as part of the CESG specified and managed CHECK scheme. It is intended to provide external assurance to an Accreditor that an ICT system's setup and configuration meets the desired HMG assurance level (as determined by the system Accreditor in conjunction with CESG GPG No. 30.
 
@@ -114,7 +114,7 @@ An ITHC is the penetration test conducted as part of the CESG specified and mana
 
 <a id="Vulnerability Scanning"></a>
 
-### Vulnerability Scanning
+#### Vulnerability Scanning
 
 A vulnerability scan is intended to scan a network (and connected ICT systems) cataloguing the patch status of all software and system services alerting on those identified which are not up-to-date based on database of patches and vulnerabilities. These alerts provide an operation view of the technical vulnerabilities an ICT system is exposed to and the information required to assist an ICT system manager in applying up-to-date patches.
 
@@ -122,11 +122,11 @@ This type of scanning is intended to provide regular internal assurance to the I
 
 <a id="Compliance Scanning"></a>
 
-### Compliance Scanning
+#### Compliance Scanning
 
 Besides simply testing for the absence of correctly patched software, some vulnerability scanners can also test when an ICT system's settings correspond to an established benchmark, for example, to the MoJ password policy or a commercial security standard such as PCI DSS. The scanner operates by examining the security configuration settings of each ICT system client (through a client installed agent) against one or more benchmarks (e.g. PCI DSS or ISO 27001) producing a compliance report as an output which can be supplied as assurance evidence to an Accreditor.
 
-## Pre-live security testing
+### Pre-live security testing
 
 During the development and deployment phases of an ICT system there are a number of standard testing activities which are conducted. Security testing is not a separate stream of activity; it must be integrated within the overall set of testing activities.
 
@@ -134,7 +134,7 @@ During the development and deployment phases of an ICT system there are a number
 
 <a id="Secure code review"></a>
 
-### Secure code review
+#### Secure code review
 
 In principle, good software development practices and the application of a comprehensive code quality assurance regime should cover the basics of what is required to deliver a secure system. CESG provides guidance on secure system development as well as secure coding requirements; these are principally provided in CESG GPG No.7 - Protection from Malicious Code and Developer Note No.6 - Coding Requirements and Guidance. It is recommended that those responsible for software development and system testing review the CESG guidance and ensure any development practices and system testing reflects the guidance provided.
 
@@ -142,7 +142,7 @@ In principle, good software development practices and the application of a compr
 
 <a id="Security consideration"></a>
 
-### Security consideration
+#### Security consideration
 
 Table below provides a high level overview of the security testing which should be considered against each of the main testing activities typically conducted during the development and deployment phases of an ICT system.
 
@@ -154,10 +154,10 @@ Table below provides a high level overview of the security testing which should 
 | Integration Testing | Involves combing system components together into a complete system release then testing as a whole. | Functional testing of security enforcing components. Functional testing of the integration of components with security enforcing functions. |
 | Acceptance Testing (FAT and SAT) | The set of tests to be run to demonstrate the suitability of the system to the client. These will typically be a subset of the tests used for system testing in the integration phase. | Testing of both functional and non-functional security requirements. Penetration test or ITHC (see <a href="#System Configuration Tests">System Configuration Tests</a>). Vulnerability scan (see <a href="#Vulnerability Scanning">Vulnerability Scanning</a>). Compliance scan (see <a href="#Compliance Scanning">Compliance Scanning</a>). |
 
-### Testing failure
+#### Testing failure
 
 Should a failure occur in any of the security testing activities undertaken, an assessment must be made on what caused the failure and how serious it is.  There may need to be discussions with the system Accreditor to inform them of any serious issues which may affect the accreditation of the ICT system.
 
-### Acceptance testing
+#### Acceptance testing
 
 As described in the last row of the table above, some form of security testing must form part of the acceptance criteria for an ICT System.
