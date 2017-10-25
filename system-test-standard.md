@@ -77,11 +77,11 @@ testing of IT systems, processes or procedures](https://intranet.justice.gov.uk/
 
 As expressed at the start of this section, the rigour of any security tests must be commensurate with the impact of a security failure. This means that a risk based approach must be taken when considering what types of security tests to execute.
 
-The decision on what security tests to include in the overall system test plan must be based on the system IAS1 risk assessment and agreed with the system Accreditor. The section below ([Types of security tests](#Types of security tests)) provides an overview of the types of security tests which must be considered, further details on the Accreditation process can be found in the Accreditation Framework.
+The decision on what security tests to include in the overall system test plan must be based on the system IAS1 risk assessment and agreed with the system Accreditor. The section below ( [Types of security tests](#types-of-security-tests) ) provides an overview of the types of security tests which must be considered, further details on the Accreditation process can be found in the Accreditation Framework.
 
 When a security test has been conducted, it is likely to highlight several risks and issues which need to be remediated and managed appropriately. This remediation is usually captured in a Risk Treatment Plan (RTP) which outlines what the issue/vulnerability identified is, the risk associated with it and the planned risk mitigation. The RTP needs to be agreed with the system Accreditor prior to being implemented; further details on this process can be found in the [Accreditation Framework](https://intranet.justice.gov.uk/documents/2015/04/accreditation-framework.pdf).
 
-<a id="Types of security tests"></a>
+<a id="types-of-security-tests"></a>
 
 ### Types of security tests
 
