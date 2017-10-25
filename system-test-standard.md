@@ -49,7 +49,7 @@ The rest of this document is split into four sections:
 
 HMG IAS 1 & 2 requires that assurance evidence is provided covering an ICT system's business systems design, implementation, and operation.
 
-Security testing of an ICT system and the assurance evidence required by an Accreditor can occur at various points throughout the system development and deployment lifecycle (see [Table 1](#Security consideration)), for example:
+Security testing of an ICT system and the assurance evidence required by an Accreditor can occur at various points throughout the system development and deployment lifecycle (see [Table 1](#security-consideration) ), for example:
 
 * Commercial off the Shelf (COTS) product assurance – Test assurance obtained through the use of a security evaluated (either by CESG or via the Common Criteria scheme) COTS product. This assurance can be obtained during the system design phase.
 * System configuration tests - Test assurance obtained before deployment and maintained thereafter in line with the system re-accreditation process. Further details on the Accreditation process can be found in the [Accreditation Framework](https://intranet.justice.gov.uk/documents/2015/04/accreditation-framework.pdf).
@@ -77,7 +77,7 @@ testing of IT systems, processes or procedures](https://intranet.justice.gov.uk/
 
 As expressed at the start of this section, the rigour of any security tests must be commensurate with the impact of a security failure. This means that a risk based approach must be taken when considering what types of security tests to execute.
 
-The decision on what security tests to include in the overall system test plan must be based on the system IAS1 risk assessment and agreed with the system Accreditor. The section below ( [Types of security tests](#types-of-security-tests) ) provides an overview of the types of security tests which must be considered, further details on the Accreditation process can be found in the Accreditation Framework.
+The decision on what security tests to include in the overall system test plan must be based on the system IAS1 risk assessment and agreed with the system Accreditor. The section below ([Types of security tests](#types-of-security-tests) ) provides an overview of the types of security tests which must be considered, further details on the Accreditation process can be found in the Accreditation Framework.
 
 When a security test has been conducted, it is likely to highlight several risks and issues which need to be remediated and managed appropriately. This remediation is usually captured in a Risk Treatment Plan (RTP) which outlines what the issue/vulnerability identified is, the risk associated with it and the planned risk mitigation. The RTP needs to be agreed with the system Accreditor prior to being implemented; further details on this process can be found in the [Accreditation Framework](https://intranet.justice.gov.uk/documents/2015/04/accreditation-framework.pdf).
 
@@ -91,7 +91,7 @@ The CESG assurance model covered in [CESG Good Practice Guide (GPG) No. 30](http
 * Vulnerability Scanning;
 * Compliance Scanning.
 
-<a id="System Configuration Tests"></a>
+<a id="system-configuration-tests"></a>
 
 #### System Configuration Tests
 
@@ -102,17 +102,19 @@ These tests may include:
 * Internally conducted tests (e.g. by the system developer) to provide informal assurance that there are no unacceptable vulnerabilities, and
 * External and perhaps more rigorous tests to provide formal assurance, for example, a penetration test or social engineering test.
 
-There any many different types of penetration test, for most MoJ ICT systems; the most common conducted is an annual IT Health Check (ITHC).
+There any many different types of penetration test, for most MoJ ICT systems; the most common conducted is an annual [IT Health Check (ITHC)](#it-health-check).
 
 Internal tests may be performed more regularly to provide informal assurance that on-going changes have not introduced any new vulnerabilities to an ICT system and that existing security controls are operating correctly.
 
+<a id="it-health-check"></a>
+
 ##### IT Health Check (ITHC)
 
-An ITHC is the penetration test conducted as part of the CESG specified and managed CHECK scheme. It is intended to provide external assurance to an Accreditor that an ICT system's setup and configuration meets the desired HMG assurance level (as determined by the system Accreditor in conjunction with CESG GPG No. 30.
+An ITHC is the penetration test conducted as part of the CESG specified and managed CHECK scheme. It is intended to provide external assurance to an Accreditor that an ICT system's setup and configuration meets the desired HMG assurance level (as determined by the system Accreditor in conjunction with [CESG GPG No. 30](https://www.ncsc.gov.uk/guidance/assurance-ict-systems-and-services-gpg-30).
 
 **Note:** Most MoJ ICT systems are connected to the GSi.  The GSi Codes of Connection (CoCo) mandates that an ITHC is conducted every 12 months.
 
-<a id="Vulnerability Scanning"></a>
+<a id="vulnerability-scanning"></a>
 
 #### Vulnerability Scanning
 
@@ -120,7 +122,7 @@ A vulnerability scan is intended to scan a network (and connected ICT systems) c
 
 This type of scanning is intended to provide regular internal assurance to the ITSO and Accreditor that operational security risks are being managed effectively.
 
-<a id="Compliance Scanning"></a>
+<a id="compliance-scanning"></a>
 
 #### Compliance Scanning
 
@@ -130,9 +132,9 @@ Besides simply testing for the absence of correctly patched software, some vulne
 
 During the development and deployment phases of an ICT system there are a number of standard testing activities which are conducted. Security testing is not a separate stream of activity; it must be integrated within the overall set of testing activities.
 
-<a href="#Secure code review">Secure code review</a> highlights the issues associated with secure code reviews while <a href="#Security consideration">Security consideration</a> provides an overview of the security testing consideration which should be applied against each standard testing activity.
+[Secure code review](#secure-code-review) highlights the issues associated with secure code reviews while [Security consideration](#security-consideration) provides an overview of the security testing consideration which should be applied against each standard testing activity.
 
-<a id="Secure code review"></a>
+<a id="secure-code-review"></a>
 
 #### Secure code review
 
@@ -140,7 +142,7 @@ In principle, good software development practices and the application of a compr
 
 **Note:** It is essential that the secure coding guidance provided to application developers and the secure code review regime is documented and made available to the system Accreditor for review and approval.
 
-<a id="Security consideration"></a>
+<a id="security-consideration"></a>
 
 #### Security consideration
 
@@ -149,10 +151,10 @@ Table below provides a high level overview of the security testing which should 
 
 | Testing activity | Description | Security Testing Consideration |
 | --- | --- | --- |
-| Unit-Module-Package Testing | This is aimed at verifying that individual modules-packages comply with their design. | See <a href="#Secure code review">Secure code review</a> |
-| Compound Testing | Units-Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See <a href="#Secure code review">Secure code review</a>. Functional testing and enhanced secure code review of security enforcing components |
+| Unit-Module-Package Testing | This is aimed at verifying that individual modules-packages comply with their design. | See [Secure code review](#secure-code-review) |
+| Compound Testing | Units-Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See [Secure code review](#secure-code-review). Functional testing and enhanced secure code review of security enforcing components |
 | Integration Testing | Involves combing system components together into a complete system release then testing as a whole. | Functional testing of security enforcing components. Functional testing of the integration of components with security enforcing functions. |
-| Acceptance Testing (FAT and SAT) | The set of tests to be run to demonstrate the suitability of the system to the client. These will typically be a subset of the tests used for system testing in the integration phase. | Testing of both functional and non-functional security requirements. Penetration test or ITHC (see <a href="#System Configuration Tests">System Configuration Tests</a>). Vulnerability scan (see <a href="#Vulnerability Scanning">Vulnerability Scanning</a>). Compliance scan (see <a href="#Compliance Scanning">Compliance Scanning</a>). |
+| Acceptance Testing (FAT and SAT) | The set of tests to be run to demonstrate the suitability of the system to the client. These will typically be a subset of the tests used for system testing in the integration phase. | Testing of both functional and non-functional security requirements. Penetration test or ITHC (see [System Configuration Tests](#system-configuration-tests) ). Vulnerability scan (see [Vulnerability Scanning](#vulnerability-scanning) ). Compliance scan (see [Compliance Scanning](#Compliance Scanning) ). |
 
 #### Testing failure
 
