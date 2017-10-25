@@ -1,9 +1,9 @@
 The purpose of system testing is to ensure all the functional and non-functional requirements of the system are verified to be operating within specified bounds.
-[HMG Security Policy Framework](https://www.gov.uk/government/publications/security-policy-framework/hmg-security-policy-framework) mandatory requirements states that:
+[HMG Security Policy Framework](https://www.gov.uk/government/publications/security-policy-framework/hmg-security-policy-framework) mandatory requirements 9 states that:
 
 > Departments and Agencies must put in place an appropriate range of technical controls for all ICT systems, proportionate to the value, importance and sensitivity of the information held and the requirements of any interconnected systems.
 
-Policy statements on system testing are covered in IT Security – Technical Controls Policy where this document sets out the MoJ standard for its implementation.
+Policy statements on system testing are covered in [IT Security – Technical Controls Policy](https://intranet.justice.gov.uk/documents/2015/04/technical-controls-policy.pdf) where this document sets out the MoJ standard for its implementation.
 
 ## Scope
 
@@ -13,81 +13,83 @@ This standard is concerned with the security testing of all MoJ ICT systems incl
 
 For the purposes of this standard the following definitions apply:
 
-*   System testing – Tests conducted against an application and/or ICT system to ascertain whether that application and/or ICT system has implemented the desired functional and non-functional requirements.
-*   Security testing – The subset of system tests which concentrate on testing an application’s and/or ICT system’s functional and non-functional security requirements.
+**System testing** – Tests conducted against an application and/or ICT system to ascertain whether that application and/or ICT system has implemented the desired functional and non-functional requirements.
+
+**Security testing** – The subset of system tests which concentrate on testing an application's and/or ICT system's functional and non-functional security requirements.
 
 ## Demonstration of Compliance
 
-The CESG Information Assurance Maturity Model (IAMM) sets out the minimum maturity level Government departments should attain. System testing is captured as a basic requirement in Level 1, which the MoJ will need to demonstrate compliance with in the MoJ IAMM return to Cabinet Office.
+The [CESG Information Assurance Maturity Model (IAMM)](https://www.ncsc.gov.uk/guidance/information-assurance-maturity-model-and-assessment-framework-gpg-40) sets out the minimum maturity level Government departments should attain. System testing is captured as a basic requirement in Level 1, which the MoJ will need to demonstrate compliance with in the MoJ IAMM return to Cabinet Office.
 
-## Testing approach
+# Testing approach
+
 This standard outlines at a high level the security testing which must be applied to all MoJ ICT systems to ensure that security vulnerabilities are identified and risk managed appropriately. The aim is for this standard to feed into the overall test requirements and test plan for an ICT system.
 
 System testing, in particular system security testing, must be performed in support of system Accreditation process to provide assurance to the Accreditor that:
 
-*   the implementation delivers the agreed security controls
-*   there are no unacceptable security vulnerabilities within the delivered solution
+* The implementation delivers the agreed security controls,
+* There are no unacceptable security vulnerabilities within the delivered solution.
 
 The following three principles must be applied when putting together a test plan for an ICT system:
 
-*   the rigour of the tests must be commensurate with the impact of a security failure
-*   the tests may need to be repeated to provide assurance that subsequent changes to the system or service have not introduced new vulnerabilities
-*   the testing services (automated or otherwise) used must generate security compliance/assurance evidence against known threats and current IT security policies. For example, penetration testing (or ITHC), ad-hoc scanning, secure code review and software configuration assurance
+* The rigour of the tests must be commensurate with the impact of a security failure;
+* The tests may need to be repeated to provide assurance that subsequent changes to the system or service have not introduced new vulnerabilities;
+* The testing services (automated or otherwise) used must generate security compliance/assurance evidence against known threats and current IT security policies. For example, penetration testing (or ITHC), ad-hoc scanning, secure code review and software configuration assurance.
 
-**Note:** It is MoJ policy that system testing is not fully conducted in a live environment. System testing should combine tests conducted in a non-live system test environment with tests conducted in a live environment (e.g. an IT Health Check).
+**Note:** It is MoJ policy that system testing is **not** fully conducted in a live environment. System testing should combine tests conducted in a non-live system test environment with tests conducted in a live environment (e.g. an IT Health Check).
 
 The rest of this document is split into four sections:
 
-*   **Guidelines** – Sets out the basic security requirements for ICT system testing and provides guidance on system test data
-*   **Risk assessment and management** – Outlines the link between system Accreditation and security testing
-*   **Types of security testing** – Provides an overview of the common types of security testing
-*   **Pre-live security testing** – Outlines how security testing links in with the standard set of testing activities which are conducted during the development and deployment phases of an ICT system
+*   Guidelines – Sets out the basic security requirements for ICT system testing and provides guidance on system test data.
+*   Risk assessment and management – Outlines the link between system Accreditation and security testing.
+*   Types of security testing – Provides an overview of the common types of security testing.
+*   Pre-live security testing – Outlines how security testing links in with the standard set of testing activities which are conducted during the development and deployment phases of an ICT system.
 
 ## Guidelines
 
-HMG IAS 1 & 2 requires that assurance evidence is provided covering an ICT system’s business systems design, implementation, and operation.
+HMG IAS 1 & 2 requires that assurance evidence is provided covering an ICT system's business systems design, implementation, and operation.
 
-Security testing of an ICT system and the assurance evidence required by an Accreditor can occur at various points throughout the system development and deployment lifecycle (see <a href="#Security consideration">Security consideration</a>), for example:
+Security testing of an ICT system and the assurance evidence required by an Accreditor can occur at various points throughout the system development and deployment lifecycle (see [Table 1](#Security consideration)), for example:
 
-*   **Commercial off the Shelf (COTS) product assurance** – Test assurance obtained through the use of a security evaluated (either by CESG or via the Common Criteria scheme) COTS product. This assurance can be obtained during the system design phase
-*   **System configuration tests** - Test assurance obtained before deployment and maintained thereafter in line with the system re-accreditation process. Further details on the Accreditation process can be found in the Accreditation Framework
+* Commercial off the Shelf (COTS) product assurance – Test assurance obtained through the use of a security evaluated (either by CESG or via the Common Criteria scheme) COTS product. This assurance can be obtained during the system design phase.
+* System configuration tests - Test assurance obtained before deployment and maintained thereafter in line with the system re-accreditation process. Further details on the Accreditation process can be found in the [Accreditation Framework](https://intranet.justice.gov.uk/documents/2015/04/accreditation-framework.pdf).
 
-## System test data
+### System test data
 
 Data used for system testing usually involves test data which have similar characteristics as close as possible to operational data.
 
-Data used for system testing must not contain any live data; the use of live data (in particular live data containing personal information) is prohibited. However as test data will tend to simulate live operations data, it is important that test data is protected to ensure details of the system design and operation are not compromised.
+Data used for system testing **must not** contain any live data; the use of live data (in particular live data containing personal information) is prohibited. However as test data will tend to simulate live operations data, it is important that test data is protected to ensure details of the system design and operation are not compromised.
  
 To protect system test data; the following principles should be followed:
 
-*   the test manager must authorise the use of test data
-*   test data should be erased from a testing environment immediately after the testing is complete or when no longer required
-*   the copying and use of test data should be logged to provide an audit trail
+* The test manager must authorise the use of test data.
+* Test data should be erased from a testing environment immediately after the testing is complete or when no longer required.
+* The copying and use of test data should be logged to provide an audit trail.
 
 In exceptional circumstances, the use of live system data may be permitted. Permission to use live data is by exception only where a valid business case must be approved by the MoJ IT Security Office (ITSO), system Accreditor and Information Asset Owner (IAO).  Further information can be obtained from the MoJ Data Access and Compliance Unit (DACU) who maintain the policy on the use of live personal data.
 
 **Note:** The risk associated with the use of live personal data for testing may require Senior Information Risk Owner (SIRO) approval. See the following Intranet page for further details:
 
-<a href="https://intranet.justice.gov.uk/documents/2015/04/live-personal-data-testing-systems.pdf">Policy on the use of live personal data for the
-testing of IT systems, processes or procedures</a>
+[Policy on the use of live personal data for the
+testing of IT systems, processes or procedures](https://intranet.justice.gov.uk/documents/2015/04/live-personal-data-testing-systems.pdf)
 
 ## Risk assessment and management
 
 As expressed at the start of this section, the rigour of any security tests must be commensurate with the impact of a security failure. This means that a risk based approach must be taken when considering what types of security tests to execute.
 
-The decision on what security tests to include in the overall system test plan must be based on the system IAS1 risk assessment and agreed with the system Accreditor. The section, <a href="#Types of security tests">Types of security tests</a>, provides an overview of the types of security tests which must be considered, further details on the Accreditation process can be found in the Accreditation Framework.
+The decision on what security tests to include in the overall system test plan must be based on the system IAS1 risk assessment and agreed with the system Accreditor. The section below ([Types of security tests](#Types of security tests)) provides an overview of the types of security tests which must be considered, further details on the Accreditation process can be found in the Accreditation Framework.
 
-When a security test has been conducted, it is likely to highlight several risks and issues which need to be remediated and managed appropriately. This remediation is usually captured in a Risk Treatment Plan (RTP) which outlines what the issue/vulnerability identified is, the risk associated with it and the planned risk mitigation. The RTP needs to be agreed with the system Accreditor prior to being implemented; further details on this process can be found in the Accreditation Framework.
+When a security test has been conducted, it is likely to highlight several risks and issues which need to be remediated and managed appropriately. This remediation is usually captured in a Risk Treatment Plan (RTP) which outlines what the issue/vulnerability identified is, the risk associated with it and the planned risk mitigation. The RTP needs to be agreed with the system Accreditor prior to being implemented; further details on this process can be found in the [Accreditation Framework](https://intranet.justice.gov.uk/documents/2015/04/accreditation-framework.pdf).
 
 <a id="Types of security tests"></a>
 
 ## Types of security tests
 
-The CESG assurance model covered in CESG Good Practice Guide (GPG) No. 30 outlines the various types of security testing which should be considered. This section provides an overview of the three most common types:
+The CESG assurance model covered in [CESG Good Practice Guide (GPG) No. 30](https://www.ncsc.gov.uk/guidance/assurance-ict-systems-and-services-gpg-30) outlines the various types of security testing which should be considered. This section provides an overview of the three most common types:
 
-*   System Configuration Tests
-*   Vulnerability Scanning
-*   Compliance Scanning
+* System Configuration Tests;
+* Vulnerability Scanning;
+* Compliance Scanning.
 
 <a id="System Configuration Tests"></a>
 
@@ -97,8 +99,8 @@ System configuration tests are first conducted prior to deployment and repeated 
 
 These tests may include:
 
-*   Internally conducted tests (e.g. by the system developer) to provide informal assurance that there are no unacceptable vulnerabilities, and
-*   External and perhaps more rigorous tests to provide formal assurance, for example, a penetration test or social engineering test.
+* Internally conducted tests (e.g. by the system developer) to provide informal assurance that there are no unacceptable vulnerabilities, and
+* External and perhaps more rigorous tests to provide formal assurance, for example, a penetration test or social engineering test.
 
 There any many different types of penetration test, for most MoJ ICT systems; the most common conducted is an annual IT Health Check (ITHC).
 
@@ -106,7 +108,7 @@ Internal tests may be performed more regularly to provide informal assurance tha
 
 #### IT Health Check (ITHC)
 
-An ITHC is the penetration test conducted as part of the CESG specified and managed CHECK scheme. It is intended to provide external assurance to an Accreditor that an ICT system’s setup and configuration meets the desired HMG assurance level (as determined by the system Accreditor in conjunction with CESG GPG No. 30.
+An ITHC is the penetration test conducted as part of the CESG specified and managed CHECK scheme. It is intended to provide external assurance to an Accreditor that an ICT system's setup and configuration meets the desired HMG assurance level (as determined by the system Accreditor in conjunction with CESG GPG No. 30.
 
 **Note:** Most MoJ ICT systems are connected to the GSi.  The GSi Codes of Connection (CoCo) mandates that an ITHC is conducted every 12 months.
 
@@ -122,7 +124,7 @@ This type of scanning is intended to provide regular internal assurance to the I
 
 ### Compliance Scanning
 
-Besides simply testing for the absence of correctly patched software, some vulnerability scanners can also test when an ICT system’s settings correspond to an established benchmark, for example, to the MoJ password policy or a commercial security standard such as PCI DSS. The scanner operates by examining the security configuration settings of each ICT system client (through a client installed agent) against one or more benchmarks (e.g. PCI DSS or ISO 27001) producing a compliance report as an output which can be supplied as assurance evidence to an Accreditor.
+Besides simply testing for the absence of correctly patched software, some vulnerability scanners can also test when an ICT system's settings correspond to an established benchmark, for example, to the MoJ password policy or a commercial security standard such as PCI DSS. The scanner operates by examining the security configuration settings of each ICT system client (through a client installed agent) against one or more benchmarks (e.g. PCI DSS or ISO 27001) producing a compliance report as an output which can be supplied as assurance evidence to an Accreditor.
 
 ## Pre-live security testing
 
