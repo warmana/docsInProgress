@@ -149,15 +149,17 @@ In principle, good software development practices and the application of a compr
 
 #### Security consideration
 
-Table below provides a high level overview of the security testing which should be considered against each of the main testing activities typically conducted during the development and deployment phases of an ICT system.
+Table 1 below provides a high level overview of the security testing which should be considered against each of the main testing activities typically conducted during the development and deployment phases of an ICT system.
 
 
 | Testing activity | Description | Security Testing Consideration |
 | --- | --- | --- |
 | Unit\/Module\/Package Testing | This is aimed at verifying that individual modules\/packages comply with their design. | See [Secure code review](#secure-code-review) |
-| Compound Testing | Units\/Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See [Secure code review](#secure-code-review). Functional testing and enhanced secure code review of security enforcing components |
+| Component Testing | Units\/Modules combined into components then tested. This is aimed at verifying that the individual components meet their design and specification requirements. Third party software may also be introduced at this point and tested. | See [Secure code review](#secure-code-review). Functional testing and enhanced secure code review of security enforcing components |
 | Integration Testing | Involves combing system components together into a complete system release then testing as a whole. | Functional testing of security enforcing components. Functional testing of the integration of components with security enforcing functions. |
 | Acceptance Testing (FAT and SAT) | The set of tests to be run to demonstrate the suitability of the system to the client. These will typically be a subset of the tests used for system testing in the integration phase. | Testing of both functional and non-functional security requirements. Penetration test or ITHC (see [System Configuration Tests](#system-configuration-tests) ). Vulnerability scan (see [Vulnerability Scanning](#vulnerability-scanning) ). Compliance scan (see [Compliance Scanning](#compliance-scanning) ). |
+
+Table 1 – Security consideration
 
 #### Testing failure
 
@@ -165,4 +167,4 @@ Should a failure occur in any of the security testing activities undertaken, an 
 
 #### Acceptance testing
 
-As described in the last row of the table above, some form of security testing must form part of the acceptance criteria for an ICT System.
+As described in the last row of Table 1, some form of security testing must form part of the acceptance criteria for an ICT System.
