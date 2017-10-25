@@ -88,6 +88,6 @@ Removable media like memory sticks are portable and easy-to-use. Unfortunately, 
 <table border='1'>
 <tr>
 <td>This policy is dated October 2017, and is an update of the IT Acceptable Use Policy, v1.0, May 2013.<br/>
-To provide feedback on this document, please <a href="mailto:awsample201710251205@googlegroups.com?subject=acceptable-use">contact us</a>.</td>
+To provide feedback on this document, please contact us: <a href="mailto:itpolicycontent@digital.justice.gov.uk?subject=acceptable-use">itpolicycontent@digital.justice.gov.uk</a>.</td>
 </tr>
 </table>
